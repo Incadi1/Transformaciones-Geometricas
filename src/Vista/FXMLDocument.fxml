@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="310.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLDocumentController">
+    <children>
+      <Canvas fx:id="Lienzo" height="393.0" layoutX="132.0" width="373.0" />
+      <ImageView fitHeight="68.0" fitWidth="63.0" layoutX="35.0" layoutY="69.0" onDragDetected="#btCubo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/cube.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="81.0" layoutX="26.0" layoutY="165.0" onDragDetected="#btCilindro" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="46.0" fitWidth="81.0" layoutX="35.0" layoutY="288.0" onDragDetected="#btEsfera" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="txCrearCubo" layoutX="36.0" layoutY="52.0" text="Crear Cubo" />
+      <Label fx:id="txCrearCilindro" layoutX="14.0" layoutY="148.0" text="Crear Cilindro" />
+      <Label fx:id="txCrearEsfera" layoutX="26.0" layoutY="224.0" text="Crear Esfera" />
+    </children>
+</AnchorPane>
